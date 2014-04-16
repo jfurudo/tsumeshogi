@@ -1,0 +1,12 @@
+<script>
+    $("#add").addClass("active");
+</script>
+<h1>問題作成</h1>
+<div class="span8">
+    <%- partial('../partials/shogiBoard') %>
+    <script>
+        initPos = {places: [], stocks:[]};
+        createrMenu();
+        mode = "create";
+    </script>
+</div>

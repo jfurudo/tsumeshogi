@@ -1,0 +1,14 @@
+<script>
+    $("#list").addClass("active");
+</script>
+<div class="container">
+<div class="span6">
+<% _.each(questions, function(q) {%>
+<section class="questionContainer">
+<h1><a href="try/<%= q.id %>"><%= q.title %></a></h1>
+<h2><%= q.tesu %>手詰</h2>
+<h3><%= q.hint %></h3>
+</section>
+<% }); %>
+</div>
+</div>

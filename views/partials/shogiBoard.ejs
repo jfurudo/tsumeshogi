@@ -1,0 +1,29 @@
+<input type="checkbox" id="clear" style="display:none"/>
+<label id="questionNumber"></label><label id="tesu"></label>
+<div id="game">
+    <div class="stockContainer" id="left">
+        <div id="gote" class="stock">
+        </div>
+    </div>
+    <div id="board">
+    </div>
+    <div class="stockContainer" id="right">
+        <textarea id="logger" readonly="true"></textarea>
+        <div id="sente" class="stock">
+        </div>
+    </div>
+</div>
+<input type="button" id="undo" value="待った" /><br/>
+<label>CLI: </label><input type="text_field" id="cli" />
+<form id="createrMenu" method="GET" action="./create" style="display: none">
+    <input id="init" type="button" value="初期化"/>
+    <input id="test" type="button" value="試す"/>
+    <input id="submit" type="button" value="送信"/><br/>
+    <input id="tesu" name="tesu" type="number" style="width:40px"/><label>手詰</label><br/>
+    <label>題名: </label><input name="title" type="text"/><br/>
+    <label>ヒント: </label><textarea id="hint" name="hint" row="2"></textarea><br/>
+    <input id="place" name="position" type="hidden"/><br/>
+    <input id="" type="submit"/>
+    <div id="pieceList"></div>
+</form>
+

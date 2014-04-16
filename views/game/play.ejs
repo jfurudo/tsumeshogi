@@ -1,0 +1,11 @@
+<script>
+var socket = io.connect("http://localhost");
+socket.request("/question", {message: "hello"}, function(response) {
+  console.log(response);
+});
+socket.on("message", function(msg) {console.log(msg)});
+</script>
+
+<div class="span8" offset2="">
+    <%- partial('../partials/shogiBoard') %>
+</div>

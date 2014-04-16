@@ -1,0 +1,14 @@
+<script>
+    $("#list").addClass("active");
+</script>
+<section>
+    <% position = question.position; console.log(position); %>
+    <h1><%= question.tesu + "手詰: " + question.title  %></h1>
+    <a href="<%= question.id - 1 %>"><button class="btn">前へ</button></a>
+    <a href="<%= question.id + 1 %>"><button class="btn">次へ</button></a>
+    <%- partial('../partials/shogiBoard') %>
+    <script>
+        initPos = <%= position %>;
+        refresh();
+    </script>
+</section>

@@ -1,0 +1,12 @@
+body {
+    padding: 40px
+}
+header {
+    height: 40px;
+    background-color: black;
+    position: fixed;
+    right: 0
+}
+.headerText {
+    color: #FFFFFF
+}

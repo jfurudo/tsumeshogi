@@ -1,0 +1,31 @@
+<script>
+var isHost = <%= isHost %>
+
+var socket = io.connect("http://localhost:1338");
+var pci = createRTCPeer(socket, "/game/sdp");
+pci.dc.onmessage = function(e) {
+  var data = JSON.parse(e.data);
+  console.log(data);
+  eval(data.message);
+  refresh();
+};
+
+socket.on("connect", function() {
+  console.log("connected");
+  socket.on("message", function(meg) {
+    console.log(msg);
+  });
+  socket.on("push_sdp", pci.gotMessage);
+  if (!isHost) {
+    pci.sendOffer();
+  }
+});
+
+teban = <%= isHost ? 1 : -1 %>;
+mode = "play";
+
+</script>
+
+<div class="span8" offset2="">
+    <%- partial('../partials/shogiBoard') %>
+</div>

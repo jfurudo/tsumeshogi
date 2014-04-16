@@ -1,0 +1,78 @@
+div#rigging-template-library{
+    display: block
+}
+
+div#game{
+    position: relative;
+    height: 330px;
+    width: 546px
+}
+div#board {
+    position: absolute;
+    top: 0;
+    left: 112px;
+    width: 320px;
+    height: 320px;
+    background-color: #cba;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+}
+.square {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #FF1;
+    border-width: 1px;
+    border-style: solid;
+}
+.movable {
+    background-color: #FC1;
+}
+.puttable {
+    background-color: #FC1;
+}
+.selected {
+    background-color: #FC1;
+}
+.stockContainer{
+    position: absolute;
+    height: 320px;
+    display: inline-block
+}
+div#left{
+    top: 0px;
+    left:0px
+}
+div#right{
+    top: 0px;
+    right:0px
+}
+.stock {
+    width: 100px;
+    height: 100px;
+    background-color: #cba;
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+}
+#sente {
+}
+.rulerCell {
+    height: 32px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+#logger {
+    height: 198px;
+    width: 88px;
+    margin-bottom: 10px;
+}
+#createrMenu {
+    width: 448px
+}
+.questionContainer {
+    border-width: 1px;
+    border: solid;
+}
